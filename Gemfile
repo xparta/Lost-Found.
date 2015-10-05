@@ -10,7 +10,7 @@ gem 'rails', '4.0.1'
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
 group :development do
-	gem "sqlite3", "~> 1.3.8"
+	 gem 'sqlite3'
 end
 
 group :production do
