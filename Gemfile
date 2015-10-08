@@ -9,13 +9,20 @@ gem 'rails', '4.0.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
+
+
 group :development do
-	 gem 'sqlite3'
+    gem 'capistrano',         require: false
+    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+
+    gem 'capistrano3-puma',   require: false
+
+gem 'puma'
 end
 
-group :production do
-	gem 'pg'
-end
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -30,7 +37,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 
-gem 'bootstrap-sass'
+
 
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
@@ -45,7 +52,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-gem 'rails_12factor'
 
 group :development, :test do
      gem 'sqlite3'
